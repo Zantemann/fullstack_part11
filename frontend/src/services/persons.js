@@ -1,7 +1,5 @@
 import axios from 'axios'
-const url = 'https://part3-ytpn.onrender.com/api/persons'
-//const url = 'http://localhost:3001/api/persons'
-//const url = 'http://localhost:3001/persons'
+const url = 'https://fullstack-part11.onrender.com/api/persons'
 
 const getAll = () => {
     const request = axios.get(url)
@@ -23,4 +21,5 @@ const update = (id, newObject) => {
     return request.then(response => response.data)
 }
 
+/* eslint-disable import/no-anonymous-default-export */
 export default { getAll, create, remove, update }
