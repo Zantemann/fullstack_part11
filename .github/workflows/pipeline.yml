@@ -63,7 +63,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BUMP: patch
 
-notify_success:
+  notify_success:
     name: Discord Webhook Notify - Success
     if: ${{ needs.tag_release.result == 'success' }}
     runs-on: ubuntu-20.04
