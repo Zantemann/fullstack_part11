@@ -2,12 +2,16 @@ module.exports = {
   'env': {
     'commonjs': true,
     'es2021': true,
-    'node': true
+    'node': true,
+    'cypress/globals': true
   },
   'extends': 'eslint:recommended',
   'parserOptions': {
     'ecmaVersion': 'latest'
   },
+  'plugins': [
+    'react', 'cypress'
+  ],
   'rules': {
     'eqeqeq': 'error',
     'no-trailing-spaces': 'error',
