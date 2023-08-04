@@ -31,16 +31,13 @@ jobs:
         working-directory: frontend
         run: npm run build
 
-      - name: Make e2e script setup executable
-        run: chmod +x run_all.sh
-
       - name: e2e tests
         uses: cypress-io/github-action@v5
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
         with:
           command: npm run test:e2e
-          start: npm run start && npm run start-frontend
+          start: npm run start, npm run start-frontend
           wait-on: http://localhost:3001, http://localhost:3000
 
   deploy:
