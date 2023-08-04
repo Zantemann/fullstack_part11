@@ -37,8 +37,11 @@ jobs:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
         with:
           command: npm run test:e2e
-          start: npm run start
-          wait-on: http://localhost:3001
+          start: |
+            npm run start
+            cd frontend
+            npm start
+          wait-on: http://localhost:3001, http://localhost:3000
 
   deploy:
     name: Deploy to Render
