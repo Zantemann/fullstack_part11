@@ -9,8 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "cypress:open": "cypress open",
-    "test:e2e": "cypress run",
-    "start:all": "node index.js && cd frontend && npm start"
+    "test:e2e": "cypress run"
   },
   "author": "",
   "license": "ISC",
