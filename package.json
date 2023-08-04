@@ -7,12 +7,17 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "cypress:open": "cypress open",
+    "test:e2e": "cypress run",
+    "start-frontend": "cd frontend && npm start"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^12.17.3",
     "eslint": "^8.41.0",
+    "eslint-plugin-cypress": "^2.13.3",
     "eslint-plugin-react": "^7.32.2",
     "nodemon": "^2.0.22"
   },
