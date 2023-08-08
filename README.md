@@ -1,1 +1,2 @@
-https://part3-ytpn.onrender.com
+Other repository:
+https://github.com/Zantemann/full-stack-open-pokedex
